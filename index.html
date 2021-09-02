@@ -24,20 +24,21 @@
       <div class="weather-app-container">
         <div class="weather-app">
           <div class="weather-app-main">
-            <h2>Mexico City</h2>
-            <ul>
-              <li>Description</li>
-              <li>Humidity</li>
-              <li>Wind</li>
-            </ul>
             <div class="row">
-              <div class="col-md-6">
-                <span
-                  ><h1>12°</h1>
-                  C | F</span
-                >
+              <div class="col-6 main-temperature">
+                <div class="clearfix">
+                  <span class="float-left"><strong>12°</strong></span>
+                  <span class="float-left"> C | F</span>
+                </div>
+                <div class="weather-description">
+                  <ul>
+                    <li id="description">Description</li>
+                    <li>Humidity</li>
+                    <li>Wind</li>
+                  </ul>
+                </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-6 main-city">
                 <ul>
                   <li>
                     <img
@@ -45,7 +46,7 @@
                       alt="cloudy"
                     />
                   </li>
-                  <li>City Name</li>
+                  <li><h2>Mexico City</h2></li>
                   <li>Date</li>
                 </ul>
               </div>

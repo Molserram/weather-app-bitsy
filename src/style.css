@@ -3,11 +3,14 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-h1,
-h2 {
+h2,
+h3 {
   font-family: "Poppins", sans-serif;
   color: rgb(255, 255, 255);
   margin: 0px;
+  size: 20px;
+  line-height: 30px;
+  font-weight: 500;
 }
 
 ul {
@@ -19,7 +22,7 @@ li {
   list-style: none;
   color: rgba(255, 255, 255, 0.8);
   font-size: 15px;
-  line-height: 18px;
+  line-height: 23px;
   margin: 0px;
   padding: 0px;
 }
@@ -38,10 +41,40 @@ li {
 
 .weather-app-main {
   color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+  line-height: 24px;
   padding: 20px;
   background-color: #5e65ff;
   border-radius: 10px;
   box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+}
+
+.main-temperature {
+  padding: 20px;
+}
+
+.main-temperature strong {
+  font-family: "Poppins", sans-serif;
+  color: rgb(255, 255, 255);
+  margin: 0px;
+  font-size: 50px;
+  font-weight: 600;
+}
+.weather-description {
+  margin-top: 20px;
+}
+
+#description {
+  font-size: 20px;
+}
+
+.main-city img {
+  margin-top: -10px;
+}
+
+.main-city ul {
+  text-align: right;
+  margin-top: 0px;
 }
 
 .footer {
