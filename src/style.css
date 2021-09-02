@@ -32,7 +32,7 @@ li::first-letter {
 }
 
 .weather-app-container {
-  max-width: 660px;
+  max-width: 600px;
   margin: 30px auto;
   padding: 0px;
 }
@@ -80,14 +80,13 @@ li::first-letter {
   font-weight: 400;
 }
 
-.main-city img {
-  margin-top: -9px;
-  margin-bottom: 10px;
+.main-city {
+  text-align: right;
 }
 
-.main-city ul {
-  text-align: right;
-  margin-top: 0px;
+.main-city img {
+  margin-top: -9px;
+  margin-bottom: 20px;
 }
 
 .main-temperature a {
