@@ -1,18 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="src/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bitsy Weather App</title>
+  </head>
+  <body>
     <div class="container">
-   <h1>Bitsy Weather App</h1> 
-   <a href="" class ="btn btn-primary">click Me</a>
-   </div>
-   <script src="src/app.js"></script>
-</body>
+      <div class="weather-app-container">
+        <div class="weather-app">
+          <div class="weather-app-main">
+            <h2>Mexico City</h2>
+            <ul>
+              <li>Description</li>
+              <li>Humidity</li>
+              <li>Wind</li>
+            </ul>
+            <div class="row">
+              <div class="col-md-6">
+                <span
+                  ><h1>12°</h1>
+                  C | F</span
+                >
+              </div>
+              <div class="col-md-6">
+                <ul>
+                  <li>
+                    <img
+                      src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+                      alt="cloudy"
+                    />
+                  </li>
+                  <li>City Name</li>
+                  <li>Date</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <small class="footer">
+          <a href="https://github.com/Molserram/weather-app-bitsy">
+            Open Source Code</a
+          >
+          by Molserram
+        </small>
+      </div>
+    </div>
+    <script src="src/app.js"></script>
+  </body>
 </html>
