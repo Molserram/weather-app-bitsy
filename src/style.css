@@ -50,7 +50,7 @@ li {
 }
 
 .main-temperature {
-  padding: 20px;
+  padding: 18px;
 }
 
 .main-temperature strong {
@@ -59,6 +59,13 @@ li {
   margin: 0px;
   font-size: 50px;
   font-weight: 600;
+}
+
+.main-temperature .units {
+  position: relative;
+  font-size: 16px;
+  top: -24px;
+  margin-left: 5px;
 }
 .weather-description {
   margin-top: 20px;
@@ -75,6 +82,11 @@ li {
 .main-city ul {
   text-align: right;
   margin-top: 0px;
+}
+
+a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
 }
 
 .footer {
