@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bitsy Weather App</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,8 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bitsy Weather App</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -27,7 +28,9 @@
             <div class="row">
               <div class="col-6 main-temperature">
                 <div class="clearfix">
-                  <span class="float-left"><strong>12</strong></span>
+                  <span class="float-left"
+                    ><strong id="data-temperature"></strong
+                  ></span>
                   <span class="units">
                     <a href="#" id="celsius">°C |</a>
                     <a href="#" id="farenheit">°F</a></span
@@ -35,9 +38,9 @@
                 </div>
                 <div class="weather-description">
                   <ul>
-                    <li id="description">Description</li>
-                    <li>Humidity</li>
-                    <li>Wind</li>
+                    <li id="data-description"></li>
+                    <li id="data-humidity"></li>
+                    <li id="data-wind"></li>
                   </ul>
                 </div>
               </div>
@@ -49,7 +52,7 @@
                       alt="cloudy"
                     />
                   </li>
-                  <li><h2>Mexico City</h2></li>
+                  <li><h2 id="data-city"></h2></li>
                   <li>Date</li>
                 </ul>
               </div>

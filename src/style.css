@@ -25,6 +25,7 @@ li {
   line-height: 23px;
   margin: 0px;
   padding: 0px;
+  text-transform: capitalize;
 }
 
 .weather-app-container {
@@ -71,8 +72,9 @@ li {
   margin-top: 20px;
 }
 
-#description {
+#data-description {
   font-size: 20px;
+  text-transform: capitalize;
 }
 
 .main-city img {
@@ -84,7 +86,7 @@ li {
   margin-top: 0px;
 }
 
-a {
+.main-temperature a {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
 }
