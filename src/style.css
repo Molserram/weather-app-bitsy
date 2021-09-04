@@ -87,6 +87,31 @@ li::first-letter {
   top: -24px;
   margin-left: 5px;
 }
+
+.main-temperature .active {
+  background-color: transparent;
+  cursor: default;
+  font-weight: normal;
+}
+
+.main-temperature .active:hover {
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.main-temperature a:hover {
+  color: white;
+}
+
+.main-temperature a {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.09);
+  padding: 3px 5px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 800;
+}
+
 .weather-description {
   margin-top: 20px;
 }
@@ -104,11 +129,6 @@ li::first-letter {
   margin-top: -20px;
   margin-right: -10px;
   margin-bottom: 0px;
-}
-
-.main-temperature a {
-  color: rgba(255, 255, 255, 0.8);
-  text-decoration: none;
 }
 
 .footer {
