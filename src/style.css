@@ -85,8 +85,8 @@ li::first-letter {
 }
 
 .main-city img {
-  margin-top: -9px;
-  margin-bottom: 20px;
+  margin-top: -20px;
+  margin-bottom: 0px;
 }
 
 .main-temperature a {
