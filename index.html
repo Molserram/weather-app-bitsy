@@ -18,12 +18,38 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/9bc3db7372.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container">
       <div class="weather-app-container">
         <div class="weather-app">
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-11">
+                <input
+                  type="search"
+                  placeholder="Type City Here"
+                  class="form-control"
+                  autocomplete="off"
+                  id="city-input"
+                />
+              </div>
+              <div class="col-1 p-0">
+                <button
+                  type="submit"
+                  class="btn btn-outline-primary form-control"
+                  id="searchClick"
+                >
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </div>
+          </form>
           <div class="weather-app-main">
             <div class="row">
               <div class="col-6 main-temperature">

@@ -43,6 +43,22 @@ li::first-letter {
   box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
 }
 
+.weather-app form {
+  margin: 0px;
+  padding-right: 16px;
+  text-align: center;
+}
+
+.form-control {
+  padding: 10px;
+}
+
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: #5e65ff;
+  border-color: #5e65ff;
+}
+
 .weather-app-main {
   color: rgba(255, 255, 255, 0.8);
   font-size: 18px;
@@ -86,6 +102,7 @@ li::first-letter {
 
 .main-city img {
   margin-top: -20px;
+  margin-right: -10px;
   margin-bottom: 0px;
 }
 
