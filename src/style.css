@@ -18,7 +18,7 @@ ul {
   padding: 0px;
 }
 
-li {
+.weather-app li {
   list-style: none;
   color: rgba(255, 255, 255, 0.8);
   font-size: 15px;
@@ -148,4 +148,29 @@ li::first-letter {
 .footer {
   margin: 20px;
   line-height: 40px;
+}
+
+.weather-forecast {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+  text-align: center;
+  line-height: 24px;
+  padding: 20px auto;
+  background-color: #f4f7ff;
+  border-radius: 10px;
+  border: 2px solid rgba(94, 101, 255, 0.1);
+}
+
+.weather-forecast li {
+  list-style: none;
+  color: #282dacd5;
+  font-size: 15px;
+  line-height: 23px;
+  margin: 5px;
+  padding: 0px;
+  border-radius: 10px;
+}
+
+.weather-forecast li:hover {
+  background-color: rgba(94, 101, 255, 0.06);
 }
