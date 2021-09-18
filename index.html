@@ -52,14 +52,16 @@
           </form>
           <div class="weather-app-main">
             <div class="row">
-              <div class="col-6 main-temperature">
-                <span class="float-left"
-                  ><strong id="data-temperature"></strong
-                ></span>
-                <span class="units">
-                  <a href="#" id="celsius" class="active">°C</a>|
-                  <a href="#" id="farenheit">°F</a></span
-                >
+              <div class="col main-temperature">
+                <div class="clearfix">
+                  <span class="float-left"
+                    ><strong id="data-temperature"></strong
+                  ></span>
+                  <span class="units">
+                    <a href="#" id="celsius" class="active">°C</a>|
+                    <a href="#" id="farenheit">°F</a></span
+                  >
+                </div>
 
                 <div class="weather-description">
                   <ul>
@@ -69,7 +71,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-6 main-city">
+              <div class="col main-city">
                 <ul>
                   <li>
                     <img src="#" id="icon-main" alt="" />
