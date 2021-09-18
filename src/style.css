@@ -99,7 +99,7 @@ li::first-letter {
   position: relative;
   font-size: 16px;
   top: -24px;
-  margin-left: 5px;
+  margin-left: 0px;
 }
 
 .main-temperature .active {
