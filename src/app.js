@@ -22,6 +22,40 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<ul>`;
+  let days = ["Thursday", "Firday", "Saturday", "Sunday", "Monday", "Tuesday"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<li>
+                <div class="row">
+                  <div class="col-4 mx-auto">
+                    <img
+                      src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+                      id="icon-seconday"
+                      alt=""
+                      width="40px"
+                    />
+                  </div>
+                  <div class="col-4 mx-auto mt-2">
+                    <span class="weather-forecast-date" >${day} </span>
+                  </div>
+                  <div class="col-4 mx-auto mt-2">
+                    <span class="weather-forecast-max">24° </span>
+                    <span class="weather-forecast-min">14°</span>
+                  </div>
+                </div>
+              </li>
+            `;
+  });
+
+  forecastHTML = forecastHTML + `</ul>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function displayTemperature(response) {
   let temperatureId = document.querySelector("#data-temperature");
   let cityId = document.querySelector("#data-city");
@@ -87,3 +121,4 @@ let celsiusLink = document.querySelector("#celsius");
 celsiusLink.addEventListener("click", getCelsius);
 
 search("Montserrat");
+displayForecast();
