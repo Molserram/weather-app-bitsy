@@ -127,32 +127,7 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
-function getFarenheit(event) {
-  event.preventDefault();
-  let temperatureId = document.querySelector("#data-temperature");
-  celsiusLink.classList.remove("active");
-  farenheitLink.classList.add("active");
-  let farenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-  temperatureId.innerHTML = Math.round(farenheitTemperature);
-}
-
-function getCelsius(event) {
-  event.preventDefault();
-  celsiusLink.classList.add("active");
-  farenheitLink.classList.remove("active");
-  let temperatureId = document.querySelector("#data-temperature");
-  temperatureId.innerHTML = Math.round(celsiusTemperature);
-}
-
-let celsiusTemperature = null;
-
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
-
-let farenheitLink = document.querySelector("#farenheit");
-farenheitLink.addEventListener("click", getFarenheit);
-
-let celsiusLink = document.querySelector("#celsius");
-celsiusLink.addEventListener("click", getCelsius);
 
 search("Montserrat");
