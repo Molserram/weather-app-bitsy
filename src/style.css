@@ -153,9 +153,8 @@ li::first-letter {
 .weather-forecast {
   color: rgba(255, 255, 255, 0.8);
   font-size: 18px;
-  text-align: center;
   line-height: 24px;
-  padding: 20px auto;
+  padding: 10px;
   background-color: #5e66ff56;
   border-radius: 10px;
   border: 2px solid rgba(94, 101, 255, 0.1);
@@ -163,6 +162,7 @@ li::first-letter {
 
 .weather-forecast li {
   list-style: none;
+  text-align: center;
   color: #282dacd5;
   font-size: 15px;
   line-height: 23px;
@@ -173,4 +173,8 @@ li::first-letter {
 
 .weather-forecast li:hover {
   background-color: rgba(94, 101, 255, 0.06);
+}
+
+.day-align {
+  text-align: left;
 }

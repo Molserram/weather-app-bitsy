@@ -50,7 +50,7 @@ function displayForecast(response) {
         forecastHTML +
         `<li>
                 <div class="row">
-                  <div class="col-4 mx-auto">
+                  <div class="col-4">
                     <img
                       src="http://openweathermap.org/img/wn/${
                         forecastDay.weather[0].icon
@@ -60,12 +60,12 @@ function displayForecast(response) {
                       width="40px"
                     />
                   </div>
-                  <div class="col-4 mx-auto mt-2">
+                  <div class="col-4 mt-2 day-align">
                     <span class="weather-forecast-date" >${formatDay(
                       forecastDay.dt
                     )} </span>
                   </div>
-                  <div class="col-4 mx-auto mt-2">
+                  <div class="col-4 mt-2">
                     <span class="weather-forecast-max">${Math.round(
                       forecastDay.temp.max
                     )}° | </span>
